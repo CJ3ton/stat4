@@ -1,0 +1,223 @@
+.header {
+    position: relative;
+    min-height: 950px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 101px;
+        height: 585px;
+        background: url('../img/header_bg_left.png') top left no-repeat;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 41px;
+        height: 761px;
+        background: url('../img/header_bg_right.png') top right no-repeat;
+        right: 0;
+        top: 385px;
+    }
+
+    &__top {
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+        }
+
+        &-nav {
+            display: flex;
+            justify-content: flex-start;
+            gap: 52px;
+            list-style-type: none;
+            margin-left: -73px;
+            order: -1;
+
+            & li {
+
+                & a {
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #331A2F;
+                    text-decoration: none;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+
+                &:nth-child(1) svg {
+                    width: 10px;
+                    height: 9px;
+                    margin-left: 11px;
+                }
+            }
+        }
+
+        &-tel {
+            font-size: 24px;
+            line-height: 35px;
+            color: #331A2F;
+            text-decoration: none;
+            position: relative;
+            transition: all .3s;
+
+            &:hover {
+                color: $main-color;
+            }
+
+            & svg {
+                width: 24px;
+                height: 24px;
+                position: absolute;
+                left: -34px;
+                top: 4px;
+            }
+        }
+
+        &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 169px;
+            height: 45px;
+            border-radius: 12px;
+            gap: 14px;
+            margin-left: 91px;
+            background-color: $main-color;
+            border: none;
+            color: #fff;
+            font-weight: 500;
+            font-size: 23px;
+            line-height: 35px;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all .3s;
+
+            & svg {
+                width: 23px;
+                height: 23px;
+            }
+
+            &:hover {
+                box-shadow: 0px 2px 9px #894fb1;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        order: -1;
+
+        &-logo {
+            width: 241px;
+        }
+
+        & img {
+            width: 100%;
+        }
+
+        &-slogan {
+            margin-left: 44px;
+            max-width: 185px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 18px;
+            color: rgba(51, 26, 47, 0.9);
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 80px;
+                background-color: rgba(51, 26, 47, 0.5);
+                left: -25px;
+                top: -13px;
+            }
+        }
+    }
+
+    &__main {
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        &-price {
+            display: flex;
+            align-items: flex-start;
+
+            & svg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &-cost {
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: rgba(51, 26, 47, 0.8);
+
+            & .price-value {
+                margin: 0 4px;
+            }
+
+            & svg {
+                width: 17px;
+                height: 22px;
+            }
+        }
+
+        &-left {
+
+            & h1 {
+                margin: 3px 0 19px 0;
+            }
+        }
+
+        &-descr {
+            margin-top: 16px;
+
+            & p {
+                margin-top: 15px;
+                font-size: 25px;
+                line-height: 160%;
+                color: rgba(51, 26, 47, 0.8);
+            }
+        }
+
+        &-right {
+            width: 620px;
+            background: url('../img/stars.png') bottom center / 100% no-repeat;
+
+            & img {
+                margin: 0 30px 44px;
+            }
+        }
+
+    }
+
+}
+
+.burger {
+    order: -1;
+}

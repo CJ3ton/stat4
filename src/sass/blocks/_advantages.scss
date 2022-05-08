@@ -1,0 +1,79 @@
+.advantages {
+    padding: 140px 0 131px 0;
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        color: #331A2F;
+
+        & .title-after {
+            position: relative;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                width: 261px;
+                height: 7px;
+                background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+                border-radius: 5px;
+                bottom: -11px;
+                right: -1px;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-top: 23px;
+        font-size: 25px;
+        line-height: 160%;
+        text-align: center;
+        color: rgba(51, 26, 47, 0.8);
+    }
+
+    &__wrapper {
+        margin-top: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 290px;
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            background-color: $main-color;
+            box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+        }
+
+        &-title {
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 150%;
+            color: #331A2F;
+        }
+
+        &-text {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 160%;
+            color: rgba(51, 26, 47, 0.8);
+        }
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+    }
+}

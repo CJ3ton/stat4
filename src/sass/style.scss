@@ -1,0 +1,96 @@
+@import 'libs/reseter.min';
+@import 'libs/fonts';
+@import 'base/variables';
+
+* {
+    font-family: 'Lato';
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    width: 1530px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #331A2F;
+}
+
+.breadscrumbs {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 77px;
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+
+        & li:nth-child(n + 2) {
+            margin-left: 26px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 10px;
+                height: 1px;
+                background: rgba(51, 26, 47, 0.5);
+                position: absolute;
+                left: -18px;
+                top: calc(50% - 1px);
+            }
+        }
+    }
+
+    & a {
+        color: rgba(51, 26, 47, 0.5);
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.color-violet {
+    color: $main-color;
+}
+
+.color-stats4market {
+    color: #EA5DBB;
+}
+
+.price-value {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 55px;
+    color: $main-color;
+}
+
+.currency {
+    font-size: 30px;
+    line-height: 29px;
+    color: rgba(51, 26, 47, 0.8);
+}
+
+@import 'blocks/header';
+@import 'blocks/prehistory';
+@import 'blocks/advantages';
+@import 'blocks/media';

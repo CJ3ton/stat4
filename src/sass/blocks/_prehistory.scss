@@ -1,0 +1,41 @@
+.prehistory {
+    padding-top: 19px;
+
+    &__wrapper {
+        margin-top: 80px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0 114px;
+        gap: 80px;
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+            margin-right: 96px;
+
+            & .prehistory__item-text {
+                margin-top: -15px;
+
+                & p {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &-img {
+
+            & img {
+                max-width: 100%;
+            }
+        }
+
+        &-text {
+            max-width: 750px;
+            font-size: 25px;
+            line-height: 160%;
+            color: rgba(51, 26, 47, 0.8);
+        }
+    }
+}
